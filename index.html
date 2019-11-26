@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- <div id="header" class="row">
+        <nav class="top-bar eyebrow show-for-medium-up" data-topbar="" data-options="is_hover: false">
+            <section class="top-bar-section">
+                <div class="menu-top-small-navigation-container">
+                    <ul class="right">
+                        <li><a href="https://www.acm.org/" title="ACM" target="_blank">ACM</a></li>
+                        <li><a href="https://dl.acm.org/" title="Digital Library" target="_blank">Digital Library</a>
+                        </li>
+                        <li><a href="https://cacm.acm.org/" title="CACM" target="_blank">CACM</a></li>
+                        <li><a href="http://queue.acm.org/" title="Queue" target="_blank">Queue</a></li>
+                        <li><a href="http://technews.acm.org/" title="TechNews" target="_blank">TechNews</a></li>
+                        <li><a href="https://learning.acm.org/" title="Learning Center" target="_blank">Learning
+                                Center</a></li>
+                        <li><a href="http://jobs.acm.org/" title="Career Center" target="_blank">Career Center</a></li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+        <div class="clearfix utilities-area">
+            <div class="logo-section">
+                <div class="navbar-header show-for-large-up">
+                    <a class="navbar-brand js-no-link-icon" href="https://www.acm.org">
+                        <img alt="ACM Logo" height="78" class="logo" title="Home"
+                            src="https://www.acm.org/images/top-menu/acm_logo_tablet.svg">
+                    </a>
+                </div>
+                <div class="navbar-header hide-for-large-up">
+                    <a href="https://www.acm.org" class="js-no-link-icon"> <img alt="ACM Logo"
+                            class="img-responsive hide-for-large-up" title="Home"
+                            src="https://www.acm.org/images/top-menu/acm_logo_mobile.svg">
+                    </a>
+                </div>
+            </div>
+            <div id="acm-description" class="column ">
+                <div class="tagline">Advancing Computing as a Science &amp; Profession</div>
+            </div>
+        </div>
+        <div id="no-nav" class="top-bar"></div>
+    </div> -->
+
+    <div class="form-container row">
+        <div class="text-center branding">
+            <p id="error-msg">&nbsp;</p>
+        </div>
+        <div class="panel panel-default" id="forms-main">
+            <div class="panel-heading">
+                Please enter the DOI, start and end dates of the paper(s) you wish to open.<br>
+            </div>
+            <form name="open_paper_form" class="open-paper-form" action="" method="post" role="form">
+
+                <div class="dates">
+                    <legend>Enter opening and closing dates for all papers</legend>
+                    <div>
+                        <label for="start_date" class="col-sm-4 col-md-2 control-label">Opening Date</label>
+                        <input type="date" id="start" name="start_date" value="">
+                    </div>
+                    <div>
+                        <label for="end_date" class="col-sm-4 col-md-2 control-label">Closing Date</label>
+                        <input type="date" id="start" name="closing_date" value="">
+                    </div>
+                </div>
+
+
+                <div>
+                    <legend>Enter comma-separated DOIs of all papers you'd like opened: </legend>
+                    <div class="paper-doi-textarea">
+                        <label for="paper_doi">Paper DOIs</label>
+                        <textarea id="dois" name="paper_dois" placeholder="Enter comma-separated paper DOIs"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- <footer class="row">
+            <div>
+                <div>
+                    <ul class="footer__legal clearfix">
+                        <li><a href="https://www.acm.org" target="_blank">Home</a></li>
+                        <li><a href="https://www.acm.org/about-acm/contact-us" target="_blank">Contact Us</a></li>
+                        <li><a href="https://www.acm.org/membership/acm-hq-contact" target="_blank">Member Services</a>
+                        </li>
+                        <li><a href="https://www.acm.org/code-of-ethics" target="_blank">Code of Ethics</a></li>
+                        <li><a href="https://www.acm.org/about-acm/privacy-policy" target="_blank">Privacy Policy</a>
+                        </li>
+                        <li><a href="https://www.acm.org/media-center/social-media-policy" target="_blank">Social Media
+                                Policy</a></li>
+                        <li><a href="https://www.acm.org/accessibility" target="_blank">Accessibility</a></li>
+                        <li class="footer__copyright">
+                            Copyright ©
+                            <script type="text/javascript">document.write(new Date().getFullYear());</script>2019, ACM,
+                            Inc
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer> -->
+
+
+</body>
+
+</html>
