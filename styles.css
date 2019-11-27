@@ -4,7 +4,7 @@
 }
 
 .form-container { 
-    width: 40%;
+    width: 600px;
     margin: 0 auto 3rem auto;
 }
 
@@ -19,8 +19,6 @@
 
 .dates-area {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .date-field {
@@ -37,6 +35,12 @@
   font-size: 20px;
   text-transform: uppercase;
   border-radius: 10px;
+  margin: 3rem auto;
+  display: block;
+}
+
+.submit-container {
+  width: 100%;
 }
 
 label {
@@ -59,4 +63,5 @@ textarea {
 
 #dynamic-input {
     margin-top: 1rem;
+  width: 200px;
 }
