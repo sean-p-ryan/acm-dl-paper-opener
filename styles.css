@@ -1,6 +1,7 @@
 #forms-main {
     background-color: #E8E8E8;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    padding: 0 0.5rem 0.1rem 0.5rem;
 }
 
 .form-container { 
@@ -19,12 +20,13 @@
 
 .dates-area {
     display: flex;
+    width: 430px;
+    justify-content: space-between;
 }
 
 .date-field {
     display: flex;
     flex-direction: column;
-    margin-right:5rem;
 }
 
 .submit-button {
@@ -57,6 +59,15 @@ textarea {
     width: 430px;
     height: 150px;
     margin-top: 1rem;
+}
+
+.requested-by {
+    display: flex;
+    flex-direction: row;
+}
+
+.drop-down-container {
+    margin-left: 0.5rem;
 }
 
 .drop-down {
