@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- <div id="header" class="row">
         <nav class="top-bar eyebrow show-for-medium-up" data-topbar="" data-options="is_hover: false">
             <section class="top-bar-section">
@@ -52,37 +50,69 @@
     </div> -->
 
     <div class="form-container row">
-        <div class="text-center branding">
-            <p id="error-msg">&nbsp;</p>
+      <div class="text-center branding">
+        <p id="error-msg">&nbsp;</p>
+      </div>
+      <div class="panel panel-default" id="forms-main">
+        <div class="panel-heading">
+          <h1>Open Papers in the ACM Digital Library</h1>
         </div>
-        <div class="panel panel-default" id="forms-main">
-            <div class="panel-heading">
-                Please enter the DOI, start and end dates of the paper(s) you wish to open.<br>
+        <form
+          name="open_paper_form"
+          class="open-paper-form"
+          action=""
+          method="post"
+          role="form"
+        >
+          <div class="dates-area input-area">
+            <div class="date-field">
+              <label for="open_date" class="col-sm-4 col-md-2 control-label"
+                >Papers to be opened on:
+              </label>
+              <input type="date" id="open-date" name="open_date" value="" />
             </div>
-            <form name="open_paper_form" class="open-paper-form" action="" method="post" role="form">
+            <div class="date-field">
+              <label for="closing-date" class="col-sm-4 col-md-2 control-label"
+                >Paperds to be closed on:
+              </label>
+              <input
+                type="date"
+                id="closing-date"
+                name="closing_date"
+                value=""
+              />
+            </div>
+          </div>
 
-                <div class="dates">
-                    <legend>Enter opening and closing dates for all papers</legend>
-                    <div>
-                        <label for="start_date" class="col-sm-4 col-md-2 control-label">Opening Date</label>
-                        <input type="date" id="start" name="start_date" value="">
-                    </div>
-                    <div>
-                        <label for="end_date" class="col-sm-4 col-md-2 control-label">Closing Date</label>
-                        <input type="date" id="start" name="closing_date" value="">
-                    </div>
-                </div>
+          <div class="paper-dois input-area">
+            <div class="paper-dois-textarea">
+              <label for="paper-dois"
+                >Please enter comma-separated DOIs of all
+                papers you wish to open:
+              </label>
+              <textarea
+                id="paper-dois"
+                name="paper_dois"
+                placeholder="Comma-separated DOIs"
+              ></textarea>
+            </div>
+          </div>
+          <div class="requested-by input-area">
+            <label for="requested-by" class="col-sm-4 col-md-2 control-label"
+              >Requsted by: 
+            </label>
 
-
-                <div>
-                    <legend>Enter comma-separated DOIs of all papers you'd like opened: </legend>
-                    <div class="paper-doi-textarea">
-                        <label for="paper_doi">Paper DOIs</label>
-                        <textarea id="dois" name="paper_dois" placeholder="Enter comma-separated paper DOIs"></textarea>
-                    </div>
-                </div>
-            </form>
-        </div>
+            <select name="requested_by" class="drop-down" onchange="openInput(this.value);">
+              <option>Sean Ryan</option>
+              <option value="red">Bruce Shriver</option>
+              <option value="blue">Stacey Schick</option>
+              <option value="Other">Other</option>
+            </select>
+            <input type="text" value="" name="requested_by" placeholder="Please enter your name" id="dynamic-input" style="display:none;" />
+          </div>
+          <input type="submit" value="Submit" class="submit-button input-area">
+        </form>
+      </div>
     </div>
 
     <!-- <footer class="row">
@@ -108,8 +138,6 @@
                 </div>
             </div>
         </footer> -->
-
-
-</body>
-
+        <script src="dynamic_input.js"></script>
+  </body>
 </html>
